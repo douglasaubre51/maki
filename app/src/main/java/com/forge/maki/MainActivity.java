@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import android.view.View;
 
@@ -19,12 +20,15 @@ public class MainActivity extends AppCompatActivity {
         // logic
         Button submitBtn = findViewById(R.id.submitBtn);
         EditText nameBox = findViewById(R.id.nameBox);
+        TextView result = findViewById(R.id.result);
 
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // on btn click logic
-                String text = "welcome to android world user - " + nameBox.getText().toString();
+                String text = "welcome to android world user :- " + nameBox.getText().toString();
+                result.setText("your name is :- " + nameBox.getText().toString());
+                result.setVisibility(View.VISIBLE);
 
                 Toast.makeText(MainActivity.this, text, Toast.LENGTH_SHORT).show();
             }
