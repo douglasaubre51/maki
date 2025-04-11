@@ -5,8 +5,8 @@
     android:orientation="vertical">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="konichiwa senpai he he he haw!"
+        android:layout_width="237dp"
+        android:layout_height="83dp"
+        android:text="konichiwa senpai!"
         android:textSize="18sp" />
 </LinearLayout>
